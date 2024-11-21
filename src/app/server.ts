@@ -1,9 +1,9 @@
 import multer from 'multer'
 import express from "express"
 import cors from 'cors'
-import fs from 'fs'
-import socketio from 'socket.io'
-import http from 'http'
+import * as fs from 'fs'
+import * as socketio from 'socket.io'
+import * as http from 'http'
 
 const app = express();
 app.use(cors())
