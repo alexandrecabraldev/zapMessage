@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:back": "tsc",
     "start": "next start",
     "lint": "next lint",
     "dev:tsx": "tsx watch ./src/app/server.ts"
