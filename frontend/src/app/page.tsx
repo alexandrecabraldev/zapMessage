@@ -25,7 +25,7 @@ export default function Home() {
 
   //const [inputMessage, setInputMessage] = useState<string>('');
   
-  const [socket] = useState(io('http://localhost:3333'))
+  const [socket] = useState(io('https://zapmessagebackend.onrender.com/'))
 
   //console.log(mensages)
 
@@ -87,7 +87,7 @@ export default function Home() {
         setImageUrl(data.name)
       }
 
-      axios.post('http://localhost:3333',formData).then((response)=>{
+      axios.post('https://zapmessagebackend.onrender.com/',formData).then((response)=>{
         //console.log(response)
       }).catch((err)=>{
         console.error(err)
